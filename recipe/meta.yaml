@@ -17,7 +17,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - setuptools
     - python
     - pyqt  {{ pyqt_version }}
