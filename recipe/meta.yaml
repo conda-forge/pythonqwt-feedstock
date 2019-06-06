@@ -14,7 +14,6 @@ source:
 build:
   number: 3
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  noarch: python
 
 requirements:
   host:
@@ -29,6 +28,12 @@ requirements:
     - numpy
 
 test:
+  requires:
+    - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+    - {{ cdt('libx11-devel') }}          # [linux]
+    - {{ cdt('mesa-libgl-devel') }}      # [linux]
+    - {{ cdt('mesa-libegl-devel') }}     # [linux]
+    - {{ cdt('mesa-dri-drivers') }}      # [linux]
   imports:
     - qwt
     - qwt.tests
