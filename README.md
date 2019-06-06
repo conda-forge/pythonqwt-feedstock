@@ -3,7 +3,7 @@ About pythonqwt
 
 Home: http://pierreraybaut.github.io/PythonQwt/
 
-Package license: LGPL
+Package license: LGPL-2.1
 
 Feedstock license: BSD 3-Clause
 
