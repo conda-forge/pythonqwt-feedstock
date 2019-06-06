@@ -1,8 +1,7 @@
-{% set name = "PythonQwt" %}
 {% set version = "0.5.5" %}
 
 package:
-  name: {{ name|lower }}
+  name: pythonqwt
   version: {{ version }}
 
 source:
@@ -13,16 +12,15 @@ source:
 
 build:
   number: 3
-  script: python -m pip install --no-deps --ignore-installed .
   noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - setuptools
     - python
+    - pip
     - pyqt  {{ pyqt_version }}
     - numpy
-    - pip
   run:
     - python
     - pyqt  {{ pyqt_version }}
@@ -37,7 +35,7 @@ test:
 
 about:
   home: http://pierreraybaut.github.io/PythonQwt/
-  license: LGPL
+  license: LGPL-2.1
   license_family: LGPL
   license_file: LICENSE
   summary: 'PythonQwt: Qt plotting widgets for Python'
