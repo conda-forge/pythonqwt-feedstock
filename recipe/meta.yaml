@@ -21,10 +21,12 @@ requirements:
     - pip
     - pyqt
     - numpy
+    - sip
   run:
     - python
     - pyqt
     - numpy
+    - sip
 
 test:
   imports:
