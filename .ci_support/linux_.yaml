@@ -10,7 +10,5 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-pyqt_version:
-- '5'
 python:
 - '2.7'
