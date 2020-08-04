@@ -1,4 +1,4 @@
-{% set version = "0.5.5" %}
+{% set version = "0.6.0" %}
 
 package:
   name: pythonqwt
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
-  sha256: ca3b4e34f51ade4681b99d73b5a9134498fee84a832e36cfd8f400b9acc07723
+  sha256: f828366ef98eb03dc6b2906a3b2effa5774451ea4c32d8944c081264aac9f0da
   patches:
     - removed_entry_points.patch
 
 build:
-  number: 5
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - pyqt
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://pierreraybaut.github.io/PythonQwt/
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
   summary: 'PythonQwt: Qt plotting widgets for Python'
