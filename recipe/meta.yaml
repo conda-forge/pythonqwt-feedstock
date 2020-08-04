@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - pyqt
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://pierreraybaut.github.io/PythonQwt/
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
   summary: 'PythonQwt: Qt plotting widgets for Python'
