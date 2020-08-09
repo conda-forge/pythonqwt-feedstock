@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: pythonqwt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
-  sha256: 7184b2806491a0da766fc9be1a984884292675bc069f958f742c5f678e893861
+  sha256: b1b0c2ce7c9f71d9f7a9e47d1fc6c1a93c939e154fd7f518186b11a26865e16f
   patches:
     - removed_entry_points.patch
 
