@@ -7,8 +7,6 @@ package:
 source:
   url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
   sha256: 838316de7dab030db660f97847d9e065e7245ed41a81c567ed8dbebf15a24785
-  patches:
-    - removed_entry_points.patch
 
 build:
   number: 0
