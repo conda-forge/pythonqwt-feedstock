@@ -15,22 +15,22 @@ build:
 
 requirements:
   host:
-    - python
     - pip
-    - pyqt
-    - numpy
-    - sip
-  run:
     - python
-    - pyqt
-    - numpy
-    - sip
+  run:
+    - numpy >=1.5
+    - python
+    - qtpy >=1.3
 
 test:
   imports:
     - qwt
     - qwt.plot
     - qwt.qt
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://pierreraybaut.github.io/PythonQwt/
