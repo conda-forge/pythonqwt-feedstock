@@ -30,7 +30,6 @@ test:
   imports:
     - qwt
     - qwt.plot
-    - qwt.qt
   requires:
     - pip
     - pyqt
