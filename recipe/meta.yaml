@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.3" %}
 
 package:
   name: pythonqwt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
-  sha256: 838316de7dab030db660f97847d9e065e7245ed41a81c567ed8dbebf15a24785
+  sha256: cbc4161d602cc5b8d8e8b10f7f570f15572e16376b08cd5657e33b2661d58861
 
 build:
   number: 0
@@ -15,22 +15,26 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
-    - pyqt
-    - numpy
-    - sip
+    - qtpy >=1.3
+    # needed since setup.py imports the library
+    - pyside2
+    - numpy >=1.5
   run:
-    - python
-    - pyqt
-    - numpy
-    - sip
+    - numpy >=1.5
+    - python >=3.7
+    - qtpy >=1.3
 
 test:
   imports:
     - qwt
     - qwt.plot
-    - qwt.qt
+  requires:
+    - pip
+    - pyqt
+  commands:
+    - pip check
 
 about:
   home: http://pierreraybaut.github.io/PythonQwt/
