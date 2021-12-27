@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.10.0" %}
 
 package:
   name: pythonqwt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
-  sha256: cbc4161d602cc5b8d8e8b10f7f570f15572e16376b08cd5657e33b2661d58861
+  sha256: bfd4b77393860072ccce808a3549063ddea962177463912070a2a5f377339d8c
 
 build:
   number: 0
