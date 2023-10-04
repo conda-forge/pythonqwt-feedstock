@@ -1,17 +1,17 @@
-About pythonqwt
-===============
-
-Home: http://pierreraybaut.github.io/PythonQwt/
-
-Package license: LGPL-2.1-only
+About pythonqwt-feedstock
+=========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pythonqwt-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/PlotPyStack/PythonQwt
+
+Package license: LGPL-2.1-only
+
 Summary: PythonQwt: Qt plotting widgets for Python
 
-Development: https://github.com/PierreRaybaut/PythonQwt
+Development: https://github.com/PlotPyStack/PythonQwt
 
-Documentation: https://pythonhosted.org/PythonQwt/
+Documentation: https://pythonqwt.readthedocs.io
 
 The PythonQwt project was initiated to solve -at least temporarily- the
 obsolescence issue of PyQwt (the Python-Qwt C++ bindings library) which is
@@ -154,5 +154,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@beenje](https://github.com/beenje/)
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 
