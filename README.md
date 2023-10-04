@@ -1,11 +1,11 @@
-About pythonqwt
-===============
+About pythonqwt-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pythonqwt-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pierreraybaut.github.io/PythonQwt/
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pythonqwt-feedstock/blob/main/LICENSE.txt)
 
 Summary: PythonQwt: Qt plotting widgets for Python
 
@@ -154,5 +154,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@beenje](https://github.com/beenje/)
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 
