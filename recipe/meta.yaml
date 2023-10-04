@@ -37,7 +37,7 @@ test:
     - pip check
 
 about:
-  home: http://pierreraybaut.github.io/PythonQwt/
+  home: https://github.com/PlotPyStack/PythonQwt
   license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
@@ -48,8 +48,8 @@ about:
     no longer maintained. The idea was to translate the original Qwt C++ code
     to Python and then to optimize some parts of the code by writing new
     modules based on NumPy and other libraries.
-  doc_url: https://pythonhosted.org/PythonQwt/
-  dev_url: https://github.com/PierreRaybaut/PythonQwt
+  doc_url: https://pythonqwt.readthedocs.io
+  dev_url: https://github.com/PlotPyStack/PythonQwt
 
 extra:
   recipe-maintainers:
