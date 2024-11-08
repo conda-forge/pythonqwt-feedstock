@@ -1,3 +1,4 @@
+{% set python_min = python_min|default("3.9") %}
 {% set version = "0.14.1" %}
 
 package:
@@ -15,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}.*
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
