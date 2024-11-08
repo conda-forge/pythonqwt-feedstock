@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/PierreRaybaut/PythonQwt/archive/v{{ version }}.tar.gz
+  url: https://github.com/PlotPyStack/PythonQwt/archive/v{{ version }}.tar.gz
   sha256: 56e64b3ae0afa5819e15949adabcd85655cdef5f16bf846d5b8e9abd237893ea
 
 build:
@@ -15,11 +15,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}.*
     - pip
+    - setuptools
   run:
+    - python >={{ python_min }}
     - numpy >=1.21
-    - python >=3.8
     - qtpy >=1.9
 
 test:
@@ -27,6 +28,7 @@ test:
     - qwt
     - qwt.plot
   requires:
+    - python {{ python_min }}
     - pip
     - pyqt
   commands:
