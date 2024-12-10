@@ -1,5 +1,5 @@
 {% set python_min = python_min|default("3.9") %}
-{% set version = "0.14.1" %}
+{% set version = "0.14.2" %}
 
 package:
   name: pythonqwt
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PlotPyStack/PythonQwt/archive/v{{ version }}.tar.gz
-  sha256: 56e64b3ae0afa5819e15949adabcd85655cdef5f16bf846d5b8e9abd237893ea
+  sha256: 547096cea1331d627d2ca14ffcd19590489eb2af5d195d75effd4edfb5e9da85
 
 build:
   number: 0
