@@ -27,14 +27,22 @@ requirements:
     - qtpy >=1.9
 
 tests:
-  - python:
-      imports:
-        - qwt
-        - qwt.plot
-      pip_check: true
-      python_version:
-        - ${{ python_min }}.*
-        - 3.*
+  # Do not use python imports test as pythonqwt
+  # requires PyQt5, PyQt6 or PySide6 to be installed
+  - script:
+      - python -c "import qwt"
+      - python -c "import qwt.plot"
+    requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pyqt
+  - script:
+      - python -c "import qwt"
+      - python -c "import qwt.plot"
+    requirements:
+      run:
+        - python 3.*
+        - pyside6
 
 about:
   license: LGPL-2.1-only
