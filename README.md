@@ -11,14 +11,13 @@ Summary: PythonQwt: Qt plotting widgets for Python
 
 Development: https://github.com/PlotPyStack/PythonQwt
 
-Documentation: https://pythonqwt.readthedocs.io
+Documentation: https://pythonqwt.readthedocs.io/
 
 The PythonQwt project was initiated to solve -at least temporarily- the
 obsolescence issue of PyQwt (the Python-Qwt C++ bindings library) which is
 no longer maintained. The idea was to translate the original Qwt C++ code
 to Python and then to optimize some parts of the code by writing new
 modules based on NumPy and other libraries.
-
 
 Current build status
 ====================
