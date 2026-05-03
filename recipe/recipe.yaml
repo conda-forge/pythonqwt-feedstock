@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.15.0"
+  version: "0.16.0"
 
 package:
   name: pythonqwt
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/PlotPyStack/PythonQwt/archive/v${{ version }}.tar.gz
-  sha256: 50fa889e09315236e2d406c31fdc2a7800135b434637c410db417cd669872640
+  sha256: 750133345717a0bc376f071e91d59764f3850328c3db3099fa69f9aaac49dd4d
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - numpy >=1.19
+    - numpy >=1.21
     - qtpy >=1.9
 
 tests:
