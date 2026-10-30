@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.16.3"
+  version: "0.17.0"
 
 package:
   name: pythonqwt
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/PlotPyStack/PythonQwt/archive/v${{ version }}.tar.gz
-  sha256: 4339b6aadc5c95703adbe1e5d1f82078e18b2c221f03d7cfa41333c2ae92b154
+  sha256: 1b2b3a105beea6df046ca0b5a7dd751573346804dac653ae667f1fd72601e7b7
 
 build:
   number: 0
